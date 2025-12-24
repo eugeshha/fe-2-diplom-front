@@ -1,0 +1,213 @@
+.train-card {
+    width: 960px;
+    /*width: 100%;*/
+    min-height: 270px;
+    display: flex;
+    background: #fff;
+    border: 1px solid black;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    font-family: Roboto, sans-serif;
+}
+
+.train-card__aside {
+    width: 196px;
+    background: #e4dfe9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.train-card__number {
+    font-size: 24px;
+    font-weight: 500;
+    color: #3e3c41;
+    margin-bottom: 15px;
+}
+
+.train-card__rote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #292929;
+}
+
+.train-card__main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.train-card__directions {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px dashed #e5e5e5;
+    padding-right: 12px;
+}
+
+.train__direction {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.train__direction-info {
+    width: 35%;
+    font-size: 16px;
+}
+
+.train__direction-info__time {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+.train__direction-info__railway {
+    color: #928f94;
+    font-size: 14px;
+}
+
+.direction__arrow-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.direction-arrow {
+    width: 30px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.direction-arrow.to {
+    background-image: url('../../assets/img/train-arrow.png');
+}
+
+.direction-arrow.back {
+    background-image: url('../../assets/img/train-arrow-back.png');
+}
+
+.travel-time {
+    font-size: 18px;
+    color: #c4c4c4;
+    margin-top: 4px;
+}
+
+.train-card__type {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 12px;
+}
+
+.train-seats__item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.train-seats__count {
+    color: #ffa800;
+    font-weight: 500;
+}
+
+.train-seats__price {
+    display: flex;
+    align-items: baseline;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2d2b2f;
+}
+
+.train-seats__price-img {
+    width: 16px;
+    height: 19px;
+    background-image: url('../../assets/img/Currency.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
+.train-service__block {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.train-service__item {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.train-service__item-wifi {
+    background-image: url('../../assets/img/Wifi.svg');
+}
+
+.train-service__item-express {
+    background-image: url('../../assets/img/Express.svg');
+}
+
+.train-service__item-conditioner {
+    background-image: url('../../assets/img/TeaCup.png');
+}
+
+.train-card__btn {
+    width: 228px;
+    height: 39px;
+    background: #ffa800;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.train-card__btn:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.train-card__btn:focus {
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #ffa800;
+    color: #ffa800;
+}
+
+.train-card__aside {
+    width: 196px;
+    background: #e4dfe9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 32px;
+    position: relative;
+}
+
+.train-card__aside::before {
+    content: '';
+    width: 86px;
+    height: 86px;
+    background-image: url('../../assets/img/train.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 17px;
+}
+

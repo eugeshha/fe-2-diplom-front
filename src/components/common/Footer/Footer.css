@@ -1,0 +1,347 @@
+/*.footer {*/
+/*    padding-top: 4vh;*/
+/*    margin-top: 10vh;*/
+/*    background-color: #2d2b2f;*/
+/*    color: white;*/
+/*}*/
+
+/*.footer__contacts {*/
+/*    display: flex;*/
+/*    justify-content: flex-start;*/
+/*    align-items: flex-start;*/
+/*    flex-direction: row;*/
+/*    padding-left: 17.7vw; !* ≈340px *!*/
+/*    gap: 10.4vw; !* ≈200px между колонками *!*/
+/*    margin-bottom: 4vh;*/
+/*}*/
+
+/*.contacts__container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    color: #E5E5E5;*/
+/*}*/
+
+/*.contacts__container .footer__contacts__title {*/
+/*    font-family: Roboto, sans-serif;*/
+/*    font-weight: 500;*/
+/*    font-size: 1.56vw;*/
+/*    line-height: 100%;*/
+/*    color: #FFFFFF;*/
+/*    margin-bottom: 2vh;*/
+/*}*/
+
+/*.footer__section-title {*/
+/*    font-family: Roboto, sans-serif;*/
+/*    font-weight: 500;*/
+/*    font-size: 1.56vw; !* ≈30px *!*/
+/*    line-height: 100%;*/
+/*    letter-spacing: 0;*/
+/*    color: #ffffff;*/
+/*    margin-bottom: 1.5vh;*/
+/*}*/
+
+/*.contacts__container .footer__contacts__list {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 2.5vh;*/
+/*}*/
+
+/*.contacts__container .footer__contacts__item {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 1.875vw;*/
+/*}*/
+
+/*.contacts__container .footer__contacts__icon {*/
+/*    max-width: 1.56vw;*/
+/*    max-height: 1.56vw;*/
+/*    flex-shrink: 0;*/
+/*    filter: brightness(0) invert(1); !* иконки белые *!*/
+/*}*/
+
+/*.contacts__container .footer__contacts__link {*/
+/*    font-family: Roboto, sans-serif;*/
+/*    font-weight: 400;*/
+/*    font-size: 1.25vw;*/
+/*    line-height: 100%;*/
+/*    color: #E5E5E5;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.contacts__container .footer__contacts__link:hover {*/
+/*    text-decoration: underline;*/
+/*}*/
+
+/*!* Подписка и соцсети *!*/
+/*.footer__subscribe {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 2vh;*/
+/*    color: #E5E5E5;*/
+/*}*/
+
+/*.footer__bottom {*/
+/*    position: relative;*/
+/*    height: 8vh;*/
+/*    background-color: #2d2b2f;*/
+/*    border-top: 1px solid white;*/
+/*}*/
+
+/*.footer__logo,*/
+/*.footer__arrow,*/
+/*.footer__year {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    transform: translateY(-50%);*/
+/*    color: white;*/
+/*}*/
+
+/*.footer__logo {*/
+/*    left: 13.18vw;*/
+/*    font-size: 1.46vw;*/
+/*    font-weight: 900;*/
+/*}*/
+
+/*.footer__arrow {*/
+/*    left: 48.9vw;*/
+/*    width: 1.56vw;*/
+/*    height: 1.56vw;*/
+/*    background: url('/public/img/arrow.png') center center no-repeat;*/
+/*    background-size: contain;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.footer__year {*/
+/*    left: 80.68vw;*/
+/*    font-size: 0.94vw;*/
+/*}*/
+
+/*.socials {*/
+/*    display: flex;*/
+/*    gap: 1vw;*/
+/*    padding: 0;*/
+/*    list-style-type: none;*/
+/*}*/
+
+/*.social {*/
+/*    width: 1.56vw;*/
+/*    height: 1.56vw;*/
+/*    background-size: contain;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.youtube { background-image: url('/public/img/youtube.png'); }*/
+/*.in      { background-image: url('/public/img/linkedin.png'); }*/
+/*.google  { background-image: url('/public/img/google.png'); }*/
+/*.facebook{ background-image: url('/public/img/facebook.png'); }*/
+/*.twitter { background-image: url('/public/img/twitter.png'); }*/
+
+.footer {
+    padding-top: 4vh;
+    margin-top: 10vh;
+    background-color: #2d2b2f;
+    color: white;
+}
+
+/* Верхняя часть футера: контакты + подписка */
+.footer__contacts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-left: 17.7vw;
+    gap: 10.4vw;
+    margin-bottom: 4vh;
+}
+
+/* Контакты */
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    color: #E5E5E5;
+    max-width: 308px;
+}
+
+.footer__section-title {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 1.56vw; /* ≈30px */
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #ffffff;
+    margin-bottom: 2vh;
+}
+
+.footer__contacts__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+}
+
+.footer__contacts__item {
+    display: flex;
+    align-items: center;
+    gap: 1.875vw;
+}
+
+.footer__contacts__icon {
+    width: 1.56vw;
+    height: 1.56vw;
+    flex-shrink: 0;
+    filter: brightness(0) invert(1);
+}
+
+.footer__contacts__link {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.25vw;
+    line-height: 100%;
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+.footer__contacts__link:hover {
+    text-decoration: underline;
+}
+
+/* Подписка */
+.footer__subscribe {
+    display: flex;
+    flex-direction: column;
+    color: #E5E5E5;
+}
+
+.footer__subscription__description {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.25vw;
+    line-height: 100%;
+    color: #e5e5e5;
+    margin-bottom: 1.5vh;
+}
+
+.footer__subscription__form {
+    display: flex;
+    gap: 1.7vw; /* ≈33px */
+    margin-bottom: 2vh;
+}
+
+.footer__subscription__form input[type="email"] {
+    width: 23.3vw;
+    height: 6vh;
+    border-radius: 0.15vw;
+    border: none;
+    padding: 0 1vw;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.25vw;
+    color: #292929;
+    background-color: #ffffff;
+}
+
+.footer__subscription__form input::placeholder {
+    color: #e5e5e5;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.25vw;
+    line-height: 100%;
+}
+
+.footer__subscription__form button {
+    width: 8.8vw;
+    height: 6vh;
+    border-radius: 0.15vw;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #e5e5e5;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.25vw;
+    line-height: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footer__subscription__form button:hover {
+    background-color: #333;
+}
+
+.footer__subscription__success {
+    color: #00c853;
+    margin-top: 1vh;
+}
+
+.footer__subscription__error {
+    color: #ff1744;
+    margin-top: 1vh;
+}
+
+/* Соцсети */
+.socials {
+    display: flex;
+    gap: 2.5vw;
+    padding: 0;
+    list-style-type: none;
+    max-height: 30px;
+    max-width: 45px;
+}
+
+.social {
+    width: 1.56vw;
+    height: 1.56vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.youtube  { background-image: url('/public/img/youtube.png'); }
+.in       { background-image: url('/public/img/linkedin.png'); }
+.google   { background-image: url('/public/img/google.png'); }
+.facebook { background-image: url('/public/img/facebook.png'); }
+.twitter  { background-image: url('/public/img/twitter.png'); }
+
+/* Нижняя часть футера */
+.footer__bottom {
+    position: relative;
+    height: 8vh;
+    background-color: #2d2b2f;
+    border-top: 1px solid white;
+}
+
+.footer__logo,
+.footer__arrow,
+.footer__year {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.footer__logo {
+    left: 13.18vw;
+    font-size: 1.46vw;
+    font-weight: 900;
+}
+
+.footer__arrow {
+    left: 48.9vw;
+    width: 1.56vw;
+    height: 1.56vw;
+    background: url('/public/img/arrow.png') center center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.footer__year {
+    left: 80.68vw;
+    font-size: 0.94vw;
+}

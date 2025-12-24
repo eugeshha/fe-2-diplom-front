@@ -1,0 +1,96 @@
+.last-tickets__title {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 36px;
+    margin-top: 90px;
+    text-align: center;
+    width: 360px;
+    height: 39px;
+}
+
+.ticket-preview {
+    margin-bottom: 17px;
+    padding: 18px;
+    background: #ffffff;
+    border: 1px solid #C4C4C4;
+    box-shadow: 0 2px 2px rgba(62, 60, 65, 0.25);
+    width: 360px;
+    height: 161px;
+    box-sizing: border-box;
+}
+
+.ticket-preview__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.ticket-preview__to {
+    text-align: right;
+}
+
+.ticket-preview__city {
+    font-weight: 400;
+    font-size: 20px;
+    color: #292929;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.ticket-preview__station {
+    max-width: 95px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #928f94;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: block;
+}
+
+.ticket-preview__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ticket-preview__features {
+    display: flex;
+    flex-direction: row;
+}
+
+.ticket-preview__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.ticket-preview__price {
+    display: flex;
+    align-items: baseline;
+}
+
+.ticket-preview__price-label {
+    margin-right: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #928f94;
+}
+
+.ticket-preview__price-value {
+    margin: 0 5px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #ffa800;
+}
+
+.ticket-preview__currency {
+    width: 20px;
+    height: 25px;
+    background-image: url(../../../assets/img/Currency.png);
+}

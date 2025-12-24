@@ -1,0 +1,213 @@
+.confirmation-section .confirmation-form, .confirmation-payment {
+    background: #fff;
+}
+
+.confirmation-payment, .confirmation-overall {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form-title {
+    padding: 33px 0 30px 30px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 30px;
+    color: #292929;
+    border-bottom: 1px solid #928F94;
+}
+
+.confirmation-overall {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    border-top: none;
+    border-radius: 0 0 0.208vw 0.208vw; /* ~4px */
+}
+
+.confirmation-passenger {
+    display: flex;
+    gap: 1.04vw; /* ~20px */
+    height: 22.13vh; /* 218 / 985 */
+    width: 655px;
+    padding: 30px;
+    border-bottom: 1px dashed #E5E5E5;
+    border-right: 1px dashed #E5E5E5;
+    box-sizing: border-box;
+
+}
+.confirmation-passenger__icon-block {
+    width: 68px;
+    text-align: center;
+    padding-right: 30px;
+    flex-shrink: 0;
+}
+
+.confirmation-passenger__icon {
+    width: 68px;
+    height: 68px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.confirmation-passenger__icon-img {
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+}
+
+.confirmation-passenger__ticket-type {
+    margin-top: 0.81vh; /* 8px */
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 0.73vw; /* ~14px */
+    color: #292929;
+}
+
+
+.confirmation-passenger__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
+
+.passenger-name {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #292929;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.passenger-detail {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 0.94vw;
+    color: #928f94;
+    margin-bottom: 1px;
+}
+
+.confirmation-overall .confirmation-overall-row {
+    display: flex;
+}
+
+.passengers-block {
+    flex: 2;
+}
+
+.summary-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.summary-block .form-title {
+    border-bottom: none;
+}
+
+.summary-block > .confirmation-change-btn {
+    margin-top: 8px;
+}
+
+.summary-img {
+    width: 20px;
+    height: 24px;
+    background-image: url('../assets/img/Currency.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.confirmation-change-btn {
+    text-align: right;
+    margin-top: 12px;
+}
+
+.confirmation-payment-method {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+
+}
+
+.payment-value {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.confirmation-payment {
+    margin-top: 30px;
+}
+
+.confirmation-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.confirmation-button > button {
+    width: 222px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #FFA800;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.confirmation-button > button:hover {
+    background-color: #ffbb33;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.confirmation-button > button:active {
+    background-color: #e09900;
+}
+.confirmation-button > button:disabled {
+    background-color: #e0e0e0;
+    color: #928F94;
+    cursor: not-allowed;
+}
+
+
+.change-button-wrapper {
+    padding: 0 24px 24px 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.change-button-wrapper_train {
+    padding: 0 4px 4px 0;
+}
+
+.change-button {
+    width: 233px;
+    height: 39px;
+    border-radius: 5px;
+    border: 1px solid #292929;
+
+    font-weight: 700;
+    font-size: 24px;
+    color: #292929;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+
+    max-width: 100%;
+    display: inline-block;
+}
+
+.change-button:hover {
+    background-color: #f0f0f0;
+}

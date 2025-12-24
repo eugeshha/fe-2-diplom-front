@@ -1,0 +1,116 @@
+.how-it-works {
+    position: relative;
+    height: 58.37vh; /* 575px из 985px */
+    background-image: url('/public/HowItWorksMain.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.how-it-works::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 168, 0, 0.4);
+    z-index: 1;
+}
+
+.how-it-works__container {
+    position: relative;
+    z-index: 2; /* выше маски */
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    width: 100%;
+    padding-left: 13vw;
+    padding-right: 13vw;
+}
+
+
+.how-it-works__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.how-it-works__title {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 1.875vw;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.how-it-works__btn {
+    width: 16.93vw;
+    height: 6.09vh;
+    border-radius: 0.51vh;
+    border: 1px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 1.25vw;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.how-it-works__btn:hover {
+    background-color: #ffca62;
+    color: #2d2b2f;
+}
+
+.how-it-works__btn:active {
+    background-color: #ffffff;
+    color: #2d2b2f;
+}
+
+.how-it-works__content {
+    display: flex;
+    gap: 10.4vw;
+    justify-content: flex-start;
+    padding-left: 10vw;
+}
+
+.how-it-works__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 11.77vw;
+    text-align: center;
+}
+
+.how-it-works__icon {
+    width: 8.43vw;
+    height: 8.43vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 2vh;
+}
+
+.icon1 {
+    background-image: url('/public/how_it_work1.svg');
+}
+.icon2 {
+    background-image: url('/public/how_it_work2.svg');
+}
+.icon3 {
+    background-image: url('/public/how_it_work3.svg');
+}
+
+.how-it-works__text {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 1.25vw;
+    line-height: 100%;
+    color: #e5e5e5;
+}

@@ -1,0 +1,235 @@
+.seats-scheme {
+    display: flex;
+    flex-direction: column;
+    width: 921px;
+    margin: 30px auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Roboto', sans-serif;
+}
+
+.scheme_wagon-number {
+    position: relative;
+    left: 40px;
+    width: 34px;
+    height: 25px;
+    background-color: #000000;
+    color: #F7F6F6;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.scheme_top-seats,
+.scheme_bottom-seats,
+.scheme_side-seats {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.scheme_top-seats,
+.scheme_bottom-seats {
+    padding-left: 129px;
+}
+
+.scheme_side-seats {
+    padding: 21px 0 0 130px;
+}
+
+.scheme_top-seats li,
+.scheme_bottom-seats li {
+    height: 29px;
+    width: 26px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scheme_top-seats li {
+    border-top: 4px solid #928f94d6;
+}
+
+.scheme_bottom-seats li {
+    border-bottom: 5px solid #928f94d6;
+}
+
+
+.scheme_side-seats li {
+    height: 24px;
+    width: 43px;
+    border-bottom: 5px solid #928f94d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scheme_side-seats li:first-child {
+    border-left: 4px solid #928f94d6;
+}
+
+.scheme_side-seats li:nth-child(2n) {
+    border-right: 4px solid #928f94d6;
+}
+
+.luxury-wagon .scheme_bottom-seats li {
+    height: 58px;
+    width: 26px;
+    line-height: 95px;
+    border-top: 4px solid #928f94d6;
+    border-bottom: 5px solid #928f94d6;
+}
+
+.available-place {
+    background-color: #F3F3F3;
+    color: #000000;
+    width: 26px;
+    height: 29px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.available-place:hover,
+.available-place.booked {
+    color: #FFA800;
+}
+
+.place_is_taken {
+    background-color: #C4C4C4;
+    color: #F7F6F6;
+    width: 26px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sitting-wagon .scheme_top-seats,
+.sitting-wagon .scheme_bottom-seats {
+    padding-left: 130px;
+}
+
+.sitting-wagon li {
+    width: 27px;
+    height: 19px;
+    margin-left: 17px;
+    line-height: 20px;
+}
+
+.scheme_first_lane-seats {
+    padding-top: 7px;
+}
+.scheme_second_lane-seats {
+    padding-top: 3px;
+}
+.scheme_third_lane-seats {
+    padding-top: 20px;
+}
+.scheme_fourth_lane-seats {
+    padding-top: 3px;
+}
+
+.scheme_upper-half,
+.scheme_lower-half {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 4px 0;
+    gap: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    justify-content: flex-start;
+}
+
+.scheme_upper-top,
+.scheme_upper-bottom,
+.scheme_lower-top,
+.scheme_lower-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    list-style: none;
+    padding: 4px 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    justify-content: flex-start;
+}
+
+.seat-wagon_button_selected {
+    position: relative;
+}
+
+.seat-wagon_button_selected::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #FFA800;
+    border-radius: 2px;
+    box-sizing: border-box;
+    pointer-events: none; /* чтобы не мешал клику */
+}
+
+/* Перегородки мест */
+.scheme_top-seats li:nth-child(2n + 1),
+.scheme_bottom-seats li:nth-child(2n + 1) {
+    border-left: 4px solid #928f94d6;
+    margin-right: 23px;
+}
+
+.scheme_top-seats li:nth-child(2n),
+.scheme_bottom-seats li:nth-child(2n) {
+    border-right: 4px solid #928f94d6;
+}
+
+/* Сидячий */
+.sitting-wagon .scheme_upper-top,
+.sitting-wagon .scheme_upper-bottom,
+.sitting-wagon .scheme_lower-top,
+.sitting-wagon .scheme_lower-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 4px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    justify-content: center;
+}
+
+.sitting-wagon .scheme_upper-top {
+    margin-bottom: 2px; /* минимальный зазор между верхними рядами */
+}
+
+.sitting-wagon .scheme_upper-bottom {
+    margin-bottom: 24px; /* отступ между верхними и нижними блоками */
+}
+
+.sitting-wagon .scheme_lower-top {
+    margin-bottom: 2px; /* минимальный зазор между нижними рядами */
+}
+
+.sitting-wagon li {
+    width: 27px;
+    height: 19px;
+    line-height: 20px;
+    margin-left: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

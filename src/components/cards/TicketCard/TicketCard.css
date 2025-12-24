@@ -1,0 +1,609 @@
+.ticket-card {
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    width: 960px;
+}
+
+.ticket-card__header {
+    display: flex;
+    align-items: center;
+    height: 108px;
+    padding: 0 20px;
+}
+
+.ticket-card__icon {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 20px;
+}
+
+.ticket-card__button {
+    font-weight: 700;
+    font-size: 24px;
+    height: 60px;
+    padding: 0 33px;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    background: #fff;
+    color: #292929;
+}
+
+.ticket-card__button:hover {
+    color: #FFD800;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ticket-card__train-info {
+    display: flex;
+    height: 122px;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: #f7f6f6;
+}
+
+.ticket-card__aside {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.ticket-card__aside-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('../../../assets/img/Train-orange.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+.ticket-card__aside-title{
+    padding-left: 20px
+}
+
+.ticket-card__aside-title .desc-name {
+    font-weight: bold;
+    font-size: 20px;
+    color: #292929;
+}
+
+.ticket-card__aside-title .desc-city {
+    font-size: 16px;
+    color: #928F94;
+}
+
+.ticket-card__route {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.route-info {
+    text-align: center;
+}
+
+.route-info .time {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.route-info .desc-city,
+.route-info .station {
+    font-size: 16px;
+    color: #292929;
+}
+
+.direction-arrow {
+    width: 30px;
+    height: 20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ticket-card__duration {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: center;
+}
+
+.duration-img {
+    width: 30px;
+    height: 30px;
+    background-image: url('../../../assets/img/Clock.svg');
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.duration-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.ticket-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #292929;
+    margin: 30px 0 0 30px;
+}
+
+.ticket-ages {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+.age-inputs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.age-inputs label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.age-input {
+    padding: 10px;
+    border: 1px solid #928F94;
+    border-radius: 5px;
+}
+
+.input-desc {
+    font-size: 14px;
+    color: #928f94;
+    margin-top: 8px;
+}
+
+.seat-carriage-type {
+    padding: 30px;
+}
+
+.ticket-section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #292929;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.ticket-ages-block {
+    height: 337px;
+    border-bottom: 1px dashed #C4C4C4;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carriage-types {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.carriage-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carriage-type-button {
+    border: none;
+    background: none;
+}
+
+.carriage-type-img {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* обычные иконки */
+.carriage-type-img.lux {
+    background-image: url('../../../assets/img/Lux.svg');
+}
+
+.carriage-type-img.coupe {
+    background-image: url('../../../assets/img/Kupe.svg');
+}
+
+.carriage-type-img.sed {
+    background-image: url('../../../assets/img/Sitting.svg');
+}
+
+.carriage-type-img.res {
+    background-image: url('../../../assets/img/Platskart.svg');
+}
+
+/* оранжевые иконки */
+.carriage-type-img.lux.active {
+    background-image: url('../../../assets/img/Lux-hover.svg');
+}
+
+.carriage-type-img.coupe.active {
+    background-image: url('../../../assets/img/Kupe-hover.svg');
+}
+
+.carriage-type-img.sed.active {
+    background-image: url('../../../assets/img/Sitting-hover.svg');
+}
+
+.carriage-type-img.res.active {
+    background-image: url('../../../assets/img/Platskart-hover.svg');
+}
+
+
+.ticket-card__wagon-placeholder {
+    margin: 20px 0;
+}
+.ticket-ages-tabs {
+    display: flex;
+    width: 100%;
+    margin-bottom: 24px;
+}
+/***ИНПУТ***/
+
+.age-tab {
+    flex: 1;
+    height: 192px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-right: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    box-sizing: border-box;
+}
+
+.age-tab:last-child {
+    border-right: 1px solid #ccc;
+}
+
+.age-tab.active {
+    border-color: #FFCE00;
+}
+
+.age-tab__input-wrapper {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    /*justify-content: center;*/
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.age-tab__fake-input {
+    width: 240px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: #fff;
+
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #292929;
+}
+
+.age-tab__prefix {
+    flex-shrink: 0;
+}
+
+.age-tab__number {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #292929;
+    width: 50px;
+    background: transparent;
+    padding-left: 4px;
+}
+
+.input-desc {
+    font-size: 12px;
+    color: #777;
+    margin-top: 6px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+
+/***ИНПУТ закончился***/
+
+
+.coach-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.coach-info-header {
+    width: 190px;
+    height: 161px;
+    background: #FFA80070;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.coach-number {
+    font-size: 72px;
+    font-weight: 700;
+    color: #292929;
+    line-height: 84px;
+    margin: 0;
+}
+
+.coach-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #292929;
+    line-height: 28px;
+    margin: 0;
+}
+
+.coach-info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 30px;
+    color: #000;
+}
+
+.coach-info-card--seats {
+    width: 160px;
+}
+
+.coach-info-card--price {
+    width: 160px;
+    font-weight: bold;
+}
+
+.coach-info-card--services {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.coach-info-title {
+    font-size: 18px;
+    color: #928f94;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.coach-info-text {
+    font-size: 24px;
+    font-weight: 400;
+    color: #292929;
+}
+
+.coach-info-text span {
+    font-weight: 700;
+}
+
+.coach-info-price {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.rouble-icon {
+    width: 14px;
+    height: 17px;
+    object-fit: contain;
+}
+
+
+
+
+.coach-info-count {
+    font-weight: 700;
+    color: #000;
+}
+
+.coach-services {
+    display: flex;
+    gap: 13px;
+    margin-top: 14px;
+}
+
+.ticket-card__wagon-numbers {
+    background-color: rgba(255, 168, 0, 0.44); /* #FFA80070 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+}
+
+.wagon-numbers__title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #292929;
+}
+
+.wagon-numbers__buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.carriage-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.number-current {
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.carriage-button.active .number-current {
+    color: #000000;
+}
+
+.wagon-numbers__note {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #292929;
+    white-space: nowrap;
+}
+
+/* Сервисы */
+.service {
+    width: 36px;
+    height: 34px;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-size: 20px 20px;
+}
+
+/* По умолчанию: черная иконка */
+.air__item        { background-image: url('../../../assets/img/Services/Cond-black.svg'); }
+.wifi__item       { background-image: url('../../../assets/img/Services/Wifi-black.svg'); }
+.linens__item     { background-image: url('../../../assets/img/Services/Lines-black.svg'); }
+.food__item       { background-image: url('../../../assets/img/Services/Eat-black.svg'); }
+
+/* Активна: белая иконка + фон */
+.service-active {
+    background-color: #FDB935;
+    border-color: #FDB935;
+}
+
+.air__item-active    { background-image: url('../../../assets/img/Services/Cond-active.svg'); }
+.wifi__item-active   { background-image: url('../../../assets/img/Services/Wifi-active.svg'); }
+.linens__item-active { background-image: url('../../../assets/img/Services/Lines-active.svg'); }
+.food__item-active   { background-image: url('../../../assets/img/Services/Eat-active.svg'); }
+
+/* Ховер: желтый фон, черная рамка */
+.service:hover:not(:disabled):not(.service-active) {
+    background-color: #FFA800;
+    border-color: #000000;
+}
+
+/* Входит в стоимость: неактивна, серая иконка и фон */
+.service:disabled {
+    cursor: default;
+    background-color: #FCDC9D;
+    border-color: #FCDC9D;
+}
+
+/* Серые иконки, если входит в стоимость (disabled) */
+.air__item:disabled {
+    background-image: url('../../../assets/img/Services/Cond-gray.svg');
+}
+.wifi__item:disabled {
+    background-image: url('../../../assets/img/Services/Wifi-gray.svg');
+}
+.linens__item:disabled {
+    background-image: url('../../../assets/img/Services/Lines-gray.svg');
+}
+.food__item:disabled {
+    background-image: url('../../../assets/img/Services/Eat-gray.svg');
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    max-width: 180px;
+    background-color: #F5F4F6;
+    color: #292929;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.2s;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.coach-demand {
+    width: 199px;
+    height: 72px;
+    background-color: #F3F3F3;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    color: #292929;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+.wagon-numbers__left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+

@@ -1,0 +1,134 @@
+.wagon-info {
+    display: flex;
+    margin: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    background: #F7F6F6;
+    border: 1px solid #C4C4C4;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.wagon-info__number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    background-color: #FFD98F;
+    text-align: center;
+}
+
+.wagon-info__number-digit {
+    font-size: 72px;
+    font-weight: bold;
+    color: #292929;
+    margin: 0;
+}
+
+.wagon-info__number p:last-child {
+    font-size: 24px;
+    color: #292929;
+    margin: 0;
+}
+
+.wagon-info__description {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 25px 40px;
+}
+
+.wagon-info__section {
+    display: flex;
+    flex-direction: column;
+}
+
+.wagon-info__section h3 {
+    font-size: 18px;
+    color: #928F94;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+
+.available-seats {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.wagon-info__section p {
+    font-size: 18px;
+    color: #000;
+    margin: 4px 0;
+}
+
+/* --- Icons --- */
+
+.facilities-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.facilities-vector {
+    width: 36px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% 70%;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: transparent;
+    position: relative;
+}
+
+/* Универсальный класс иконки */
+.facility-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/*.conditioner {*/
+/*    background-image: url(../../assets/img/Conditioner.png);*/
+/*}*/
+/*.wifi {*/
+/*    background-image: url(../../assets/img/Wifi.png);*/
+/*}*/
+/*.linens {*/
+/*    background-image: url(../../assets/img/Linens.png);*/
+/*}*/
+/*.food {*/
+/*    background-image: url(../../assets/img/TeaCup.png);*/
+/*}*/
+
+
+.conditioner-included,
+.wifi-included,
+.linens-included,
+.food-included {
+    background-color: #FCDC9D;
+}
+
+.facilities-vector:hover::after {
+    display: flex;
+    position: absolute;
+    top: 40px;
+    left: -48px;
+    justify-content: center;
+    align-items: center;
+    content: attr(data-title);
+    width: 130px;
+    height: 32px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #292929;
+    z-index: 1;
+}
+
+
+.facilities-vector:hover {
+    background-color: #FFA800;
+}
