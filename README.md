@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-![CI](https://github.com/eugeshha/collapse/actions/workflows/web.yml/badge.svg)
+![CI](https://github.com/eugeshha/fe-2-diplom-front/actions/workflows/web.yml/badge.svg)
 
 # Webpack5
 
